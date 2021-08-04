@@ -11,7 +11,4 @@ app.use(express.static(path.join(__dirname, "../public")));
 
 app.use("/reports", reportRoute);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log("Server is up at port", PORT);
-});
+module.exports = app;
